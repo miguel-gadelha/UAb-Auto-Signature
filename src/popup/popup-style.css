@@ -1,0 +1,107 @@
+html{
+    box-shadow: 1px 1px 7px 1px black;
+    padding:0px 20px;
+    min-width: 312px;
+}
+body{
+    font-family: 'Roboto' !important;
+}
+
+select {
+    padding-bottom: 1px;
+    padding-top: 5px;
+    font-size: 15px;
+    border: 2px solid #c3c3c3;
+}
+input{
+    border: 2px solid #c3c3c3;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+select#font {
+    border: none;
+    border-bottom: 1px solid black;
+}
+select.size{
+    margin-left: 0px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+input[type="color" i] {
+    background: transparent;
+    margin-right: -5px;
+    border-right: 0px !important;
+    border-left: 0px;
+}
+
+input[type="text" i] {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: 0px !important;
+    width: 65%;
+}
+
+#buttons input[type="button" i] {
+    padding: 9px 14px;
+    border-radius: 12px;
+    margin: 5px 0px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto' !important;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border: 2px solid black;
+    font-size: 13px;
+}
+
+#buttons input[type="button" i]:hover, #buttons input[type="button" i]:focus {
+    outline: none;
+    background-color: transparent;
+    color: black;
+    /* font-family: Roboto; */
+}
+
+input#button--save {
+    margin-left: 10px !important;
+}
+
+section#buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.input__box {
+    display: flex;
+    margin: 20px auto;
+}
+
+.input__content {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+p.offer{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    float: right;
+    color: #6b6b6b;
+    margin-top: 10px;
+}
+
+div#preview {
+    padding: 5px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}

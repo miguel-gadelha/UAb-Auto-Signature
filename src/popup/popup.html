@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>UAb Auto Signature</h1>
+    </header>
+
+    <section id="builder">
+        <h3>Build your Signature:</h3>
+        <div class="font__selector">
+            <label style="font-weight: 500;" for="font">Font Family:  </label>
+            <select name="font" id="font">
+                <option value="arial"     style="font-family: Arial, sans-serif;">Arial</option>
+                <option value="times"     style="font-family: Times, serif;">Times</option>
+                <option value="courier"   style="font-family: Courier, monospace;">Courier</option>
+                <option value="georgia"   style="font-family: Georgia, serif;">Georgia</option>
+                <option value="verdana"   style="font-family: Verdana, sans-serif;">Verdana</option>
+                <option value="trebuchet" style="font-family: 'Trebuchet MS', sans-serif;" selected="selected"  >Trebuchet</option>
+            </select>
+        </div>
+
+        <div class="text__input">
+
+            <div class="input__content">
+
+                <div class="input__box input--message">
+                    <input type="text" placeholder="Message" name="message" id="message">
+                    
+                    <div class="styles__box message__styles">
+                        <input type="color" name="message__color" id="message__color">
+
+                        <select class="size" name="message__size" id="message__size">
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8" selected="selected">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                        </select>
+
+                    </div>
+
+                </div>
+               
+                <div class="input__box input--title">
+                    <input type="text" placeholder="Title" name="title" id="title">
+
+                    <div class="styles__box title__styles">
+                        <input type="color" name="title__color" id="title__color">
+
+                        <select class="size" name="title__size" id="title__size">
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12" selected="selected">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="input__box input--subtitle">
+                    <input type="text" placeholder="Sub-title" name="subtitle" id="subtitle">
+
+                    <div class="styles__box subtitle__styles">
+                        <input type="color" name="subtitle__color" id="subtitle__color">
+
+                        <select class="size" name="subtitle__size" id="subtitle__size">
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8" selected="selected">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="input__box input--paragraph">
+                    <input type="text" placeholder="Paragraph" name="paragraph" id="paragraph">
+
+                    <div class="styles__box paragraph__styles">
+                        <input type="color" name="paragraph__color" id="paragraph__color">
+
+                        <select  class="size" name="paragraph__size" id="paragraph__size">
+                            <option value="4">4</option>
+                            <option value="6" selected="selected">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="htmlBox">
+        <h3>Or you can add Text or HTML here:</h3>
+        <textarea name="htmlBox" id="htmlBox__content" placeholder="If you enter anything here only this input will be considered" cols="39" rows="5"></textarea>
+        
+    </section>
+
+    <section id="preview__container" style="display: none;">
+        <h3>Preview:</h3>
+        <div id="preview"></div>
+    </section>
+
+    <section id="buttons">
+
+        <input id="button--preview" type="button" value="Preview">
+        <input id="button--save" type="button" value="Save">
+
+
+    </section>
+
+    <p class="offer">Offered by M.Gadelha</p>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
