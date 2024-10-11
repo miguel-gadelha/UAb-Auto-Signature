@@ -15,7 +15,10 @@
     "default_popup": "index.html",
     "default_title": "UAb Auto Signature - Create and edit your signature"
   },
-  
+  "background": {
+    "service_worker": "assets/auto-sign.js",
+    "type": "module"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -24,7 +27,7 @@
       ],
       "run_at" : "document_end",
       "js": [
-        "assets/autoSign-BBVB_o0T.js"
+        "assets/auto-sign.js"
       ]
     }
   ]

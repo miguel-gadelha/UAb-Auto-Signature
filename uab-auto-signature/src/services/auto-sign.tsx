@@ -24,9 +24,7 @@ class AutoSign {
   }
 
   private getTargetTextInput() {
-    if (document.getElementById("wmd-input")) {
-      return document.getElementById("wmd-input");
-    } else if (document.getElementById("id_messageeditable")) {
+    if (document.getElementById("id_messageeditable")) {
       return document.getElementById("id_messageeditable");
     } else {
       throw new Error("Target text input not found");
@@ -34,9 +32,9 @@ class AutoSign {
   }
 
   public async sign() {
-    // if (!this.validPage) {
-    //   return;
-    // }
+    if (!this.validPage) {
+      return;
+    }
 
     const signature = await this.storageManager.getSignature();
 
@@ -52,8 +50,11 @@ class AutoSign {
   }
 }
 
-console.log("autoSign");
+(async () => {
+  if (!window) {
+    return;
+  }
 
-const autoSign = new AutoSign(new ChromeStorageManager());
-
-autoSign.sign();
+  const autoSign = new AutoSign(new ChromeStorageManager());
+  await autoSign.sign();
+})();
